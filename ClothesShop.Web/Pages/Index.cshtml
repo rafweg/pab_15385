@@ -1,0 +1,24 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "ClothesShop Admin";
+}
+
+@if (User.Identity?.IsAuthenticated == true)
+{
+    if (User.IsInRole("Admin"))
+    {
+        <script>window.location.href = '/Admin/Dashboard';</script>
+    }
+    else
+    {
+        <script>window.location.href = '/User/Dashboard';</script>
+    }
+}
+else
+{
+    <div class="text-center">
+        <h1 class="display-4">Welcome to ClothesShop Admin</h1>
+        <p>Please <a asp-page="/Account/Login">login</a> to access the admin panel.</p>
+    </div>
+}

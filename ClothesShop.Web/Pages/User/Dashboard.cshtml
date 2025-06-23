@@ -1,0 +1,93 @@
+@page
+@using ClothesShop.Domain.Entities
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model DashboardModel
+@{
+    ViewData["Title"] = "User Dashboard";
+}
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Welcome, @User.Identity?.Name</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <a asp-page="/User/Orders" class="btn btn-outline-secondary">My Orders</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card text-white bg-info mb-3">
+            <div class="card-header">My Orders</div>
+            <div class="card-body">
+                <h4 class="card-title">@Model.TotalOrders</h4>
+                <p class="card-text">Total orders placed</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-warning mb-3">
+            <div class="card-header">Pending Orders</div>
+            <div class="card-body">
+                <h4 class="card-title">@Model.PendingOrders</h4>
+                <p class="card-text">Orders being processed</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-header">Completed Orders</div>
+            <div class="card-body">
+                <h4 class="card-title">@Model.CompletedOrders</h4>
+                <p class="card-text">Successfully delivered</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>Recent Orders</h3>
+        @if (Model.RecentOrders.Any())
+        {
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var order in Model.RecentOrders)
+                    {
+                        <tr>
+                            <td>@order.Id</td>
+                            <td>@order.CreatedAt.ToString("MMM dd, yyyy")</td>
+                            <td>$@order.TotalAmount.ToString("F2")</td>
+                            <td>
+                                <span class="badge bg-@(order.Status == OrderStatus.Delivered ? "success" : order.Status == OrderStatus.Pending ? "warning" : "secondary")">
+                                    @order.Status
+                                </span>
+                            </td>
+                            <td>
+                                <a asp-page="/User/Orders/Details" asp-route-id="@order.Id" class="btn btn-sm btn-outline-primary">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info">
+                <h4>No orders yet</h4>
+                <p>You haven't placed any orders yet. <a href="/products">Start shopping</a> to see your orders here.</p>
+            </div>
+        }
+    </div>
+</div>
