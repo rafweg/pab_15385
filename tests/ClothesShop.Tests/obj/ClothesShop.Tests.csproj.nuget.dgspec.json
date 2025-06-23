@@ -1,0 +1,586 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/home/Workspace/CSharp/ClothesShop 2/tests/ClothesShop.Tests/ClothesShop.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.API/ClothesShop.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.API/ClothesShop.API.csproj",
+        "projectName": "ClothesShop.API",
+        "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.API/ClothesShop.API.csproj",
+        "packagesPath": "/Users/home/.nuget/packages/",
+        "outputPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/home/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Application/ClothesShop.Application.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Application/ClothesShop.Application.csproj"
+              },
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj"
+              },
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.GraphQL/ClothesShop.GraphQL.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.GraphQL/ClothesShop.GraphQL.csproj"
+              },
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Infrastructure/ClothesShop.Infrastructure.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Infrastructure/ClothesShop.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "HotChocolate.AspNetCore": {
+              "target": "Package",
+              "version": "[13.5.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/home/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Application/ClothesShop.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Application/ClothesShop.Application.csproj",
+        "projectName": "ClothesShop.Application",
+        "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Application/ClothesShop.Application.csproj",
+        "packagesPath": "/Users/home/.nuget/packages/",
+        "outputPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/home/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/home/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj",
+        "projectName": "ClothesShop.Domain",
+        "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj",
+        "packagesPath": "/Users/home/.nuget/packages/",
+        "outputPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/home/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/home/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.GraphQL/ClothesShop.GraphQL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.GraphQL/ClothesShop.GraphQL.csproj",
+        "projectName": "ClothesShop.GraphQL",
+        "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.GraphQL/ClothesShop.GraphQL.csproj",
+        "packagesPath": "/Users/home/.nuget/packages/",
+        "outputPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.GraphQL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/home/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Application/ClothesShop.Application.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Application/ClothesShop.Application.csproj"
+              },
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "HotChocolate.AspNetCore": {
+              "target": "Package",
+              "version": "[13.5.1, )"
+            },
+            "HotChocolate.Data.EntityFramework": {
+              "target": "Package",
+              "version": "[13.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/home/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Infrastructure/ClothesShop.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Infrastructure/ClothesShop.Infrastructure.csproj",
+        "projectName": "ClothesShop.Infrastructure",
+        "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Infrastructure/ClothesShop.Infrastructure.csproj",
+        "packagesPath": "/Users/home/.nuget/packages/",
+        "outputPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/home/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Application/ClothesShop.Application.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Application/ClothesShop.Application.csproj"
+              },
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/home/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/home/Workspace/CSharp/ClothesShop 2/tests/ClothesShop.Tests/ClothesShop.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/home/Workspace/CSharp/ClothesShop 2/tests/ClothesShop.Tests/ClothesShop.Tests.csproj",
+        "projectName": "ClothesShop.Tests",
+        "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/tests/ClothesShop.Tests/ClothesShop.Tests.csproj",
+        "packagesPath": "/Users/home/.nuget/packages/",
+        "outputPath": "/Users/home/Workspace/CSharp/ClothesShop 2/tests/ClothesShop.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/home/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.API/ClothesShop.API.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.API/ClothesShop.API.csproj"
+              },
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Application/ClothesShop.Application.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Application/ClothesShop.Application.csproj"
+              },
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Domain/ClothesShop.Domain.csproj"
+              },
+              "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Infrastructure/ClothesShop.Infrastructure.csproj": {
+                "projectPath": "/Users/home/Workspace/CSharp/ClothesShop 2/src/ClothesShop.Infrastructure/ClothesShop.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.69, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/home/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
