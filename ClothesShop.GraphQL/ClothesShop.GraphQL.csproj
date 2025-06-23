@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="HotChocolate.AspNetCore" Version="13.5.1"/>
+        <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.5.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ClothesShop.Domain\ClothesShop.Domain.csproj"/>
+        <ProjectReference Include="..\ClothesShop.Application\ClothesShop.Application.csproj"/>
+    </ItemGroup>
+
+</Project>
